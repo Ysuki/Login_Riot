@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="icon" type="image/png" href="assets\img\riot.png"/>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <title>Login</title>
+</head>
+<body>
+    <main>
+        <section class="login">
+            <div class="wallpaper_input">
+                <label class="switch">
+                    <span class="switch_text">menu animation</span>
+                    <div class="switch_wrapper">
+                        <input type="checkbox" name="switch_animation" id="animation">
+                        <span class="switch_button"></span>
+                    </div>
+                </label>
+                <label class="switch">
+                    <span class="switch_text">menu music</span>
+                    <div class="switch_wrapper">
+                        <input type="checkbox" name="switch_music" id="sound">
+                        <span class="switch_button"></span>
+                    </div>
+                </label>
+            </div>
+            <div class="wrapper">
+                <img src="assets/img/riot-games.svg" class="login_logo">
+                <h1 class="login_title">Fazer login</h1>
+                <label class="login_label">
+                    <span id="login_text">nome usuario</span>
+                    <input type="text" name="username" class="input">
+                </label>
+                <label class="login_label">
+                    <span id="password_text">senha</span>
+                    <input type="text" name="password" class="input" id="password">
+                    <div>
+                        <img id="icon" class="hideicon" onclick="eyeClick()" src ="assets/img/show.png" alt="show icon">
+                    </div>
+                </label>
+                <div class="login_icons">
+                    <button type="button" class="icons_button">
+                        <img src="assets/img/facebook.svg" alt="facebook">
+                    </button>
+    
+                    <button type="button" class="icons_button">
+                        <img src="assets/img/google.svg" alt="google">
+                    </button>
+    
+                    <button type="button" class="icons_button">
+                        <img src="assets/img/apple.svg" alt="apple">
+                    </button>
+    
+                    <button type="button" class="icons_button">
+                        <img src="assets/img/xbox.svg" alt="xbox">
+                    </button>
+                </div>
+                <label class="login_label--checkbox">
+                    <input type="checkbox" class="input--checkbox">
+                    manter login
+                </label>
+            </div>
+            <div class="wrapper">
+                <button type="button" class="login_button" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M13.025 1l-2.847 2.828 6.176 6.176h-16.354v3.992h16.354l-6.176 6.176 2.847 2.828 10.975-11z"/></svg>
+                </button>
+                <a href="#" class="login_link">não consegue iniciar sessão?</a>
+                <a href="#" class="login_link">criar conta</a>
+            </div>
+        </section>
+        <section class="wallpaper">
+            <audio src="assets\audio.mp3" autoplay loop muted id="audio"></audio>
+            <video autoplay muted loop class="wallpaper_hide" id="nunu_video">
+                <source src="assets\img\NunuVideo.mp4" type="video/mp4">
+            </video>
+            <img src="assets\img\NunuWallpaper.jpg" alt="wallpaper" class="current_wallpaper" id="nunu_image">
+        </section>
+    </main>
+</body>
+</html>
