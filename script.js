@@ -17,12 +17,13 @@ const audio = document.getElementById('audio');
 audio.muted = false;
 audio.volume = 0.3;
 
+
 button.setAttribute('disabled', '')
 passwordText.classList.add('span-active');
 loginText.classList.add('span-active');
 password.setAttribute("type", "password")
 checkAnimation.checked = true;
-checkSound.checked = true;
+checkSound.checked = false;
 video.classList.add('current_wallpaper')
 image.classList.add('wallpaper_hide')
 video.classList.remove('wallpaper_hide')
